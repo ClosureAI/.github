@@ -37,11 +37,13 @@ body:
       description: Define behavior for each user role (REQUIRED)
       placeholder: |
         - Unauthenticated User: [Can/Cannot access, sees...]
-        - Basic User: [Can/Cannot perform action, sees...]
+        - Client: [Can/Cannot perform action, sees...]
+        - Advocate: [Can/Cannot perform action, sees...]
         - Admin: [Full access to...]
       value: |
         - Unauthenticated User: 
-        - Basic User: 
+        - Client: 
+        - Advocate: 
         - Admin:
     validations:
       required: true
