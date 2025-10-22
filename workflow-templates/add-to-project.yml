@@ -13,4 +13,3 @@ jobs:
         with:
           project-url: https://github.com/orgs/ClosureAI/projects/2
           github-token: ${{ secrets.ORG_PROJECT_TOKEN }}
-
