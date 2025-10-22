@@ -3,6 +3,7 @@ name: Bug Report
 title: "[BUG] "
 labels: ["bug"]
 assignees: []
+description: Report a bug or issue (no new features, only bugs)
 
 body:
   - type: input
