@@ -3,7 +3,7 @@ name: Bug Report
 title: "[BUG] "
 labels: ["bug"]
 assignees: []
----
+
 body:
   - type: input
     id: summary
