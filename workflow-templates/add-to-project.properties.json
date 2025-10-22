@@ -1,0 +1,7 @@
+{
+  "name": "Add Issues to Organization Project",
+  "description": "Automatically add new issues to the ClosureAI organization project",
+  "iconName": "project",
+  "categories": ["Automation"]
+}
+
