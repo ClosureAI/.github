@@ -1,0 +1,136 @@
+name: Bug Report
+description: Report a bug or issue
+title: "[BUG]: "
+labels: ["bug"]
+assignees: []
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: 🐛 Bug Summary
+      description: One-line summary of the bug
+      placeholder: e.g., Users can't login on mobile after session timeout
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: 🔴 Severity
+      options:
+        - Critical (System down, data loss, security breach)
+        - High (Major feature broken, no workaround)
+        - Medium (Feature impaired, workaround exists)
+        - Low (Minor issue, cosmetic)
+    validations:
+      required: true
+
+  - type: input
+    id: user-role
+    attributes:
+      label: 👤 User Role/Permissions
+      description: What role does the affected user have?
+      placeholder: e.g., Admin, Basic User, Premium User
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: platforms
+    attributes:
+      label: 📱 Affected Platforms
+      options:
+        - label: Backend API
+        - label: Web - Chrome
+        - label: Web - Firefox
+        - label: Web - Safari
+        - label: iOS
+        - label: Android
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: 🌍 Environment
+      options:
+        - Production
+        - Staging
+        - Development
+        - Local
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 🔄 Steps to Reproduce
+      description: Clear steps to reproduce the issue
+      placeholder: |
+        1. Login as [role]
+        2. Navigate to...
+        3. Click on...
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: ✅ Expected Behavior
+      description: What should happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: ❌ Actual Behavior
+      description: What actually happens?
+    validations:
+      required: true
+
+  - type: textarea
+    id: permission-check
+    attributes:
+      label: 🔐 Permission-Related Questions
+      description: Help us understand if this is permission-related
+      value: |
+        - Is this bug role-specific? 
+        - Does it work for other roles? 
+        - Is it denying access that should be allowed? 
+        - Is it allowing access that should be denied?
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 📋 Error Messages/Logs
+      description: Any console errors, network responses, or logs
+      render: shell
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 📸 Screenshots/Videos
+      description: Drag and drop images or videos here
+
+  - type: input
+    id: screen-recording
+    attributes:
+      label: 🎥 Screen Recording Link
+      description: Link to Loom, CleanShot, or other screen recording demonstrating the bug
+      placeholder: https://www.loom.com/share/...
+
+  - type: dropdown
+    id: reproducibility
+    attributes:
+      label: 🔄 Reproducibility
+      options:
+        - Always (100%)
+        - Often (75%)
+        - Sometimes (50%)
+        - Rarely (25%)
+        - Cannot reproduce
+
+  - type: textarea
+    id: workaround
+    attributes:
+      label: 🔧 Workaround
+      description: Is there a temporary workaround?
