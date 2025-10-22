@@ -95,7 +95,7 @@ body:
         - [ ] Permission tests for each role
         - [ ] API authorization tests
         - [ ] UI permission-based rendering tests
-      content: |
+      value: |
         - [ ] Permission tests for each role
         - [ ] API authorization tests
         - [ ] UI permission-based rendering tests
