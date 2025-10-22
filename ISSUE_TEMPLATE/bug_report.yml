@@ -1,8 +1,10 @@
+---
 name: Bug Report
-description: Report a bug or issue
-title: "[BUG]: "
+about: Create a report to help us improve
+title: "[BUG] "
 labels: ["bug"]
 assignees: []
+---
 body:
   - type: input
     id: summary
