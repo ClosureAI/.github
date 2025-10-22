@@ -95,6 +95,10 @@ body:
         - [ ] Permission tests for each role
         - [ ] API authorization tests
         - [ ] UI permission-based rendering tests
+      content: |
+        - [ ] Permission tests for each role
+        - [ ] API authorization tests
+        - [ ] UI permission-based rendering tests
 
   - type: input
     id: design-link
